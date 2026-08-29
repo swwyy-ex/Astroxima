@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+<h1>ASTROXIMA</h1>
+
+<p id="presentation">
+Bienvenue sur ASTROXIMA, le site internet dédié à l'astronomie !
+</p>
+
+ <h2>LA LUNE</h2>
+ <button onclick="afficherLune()">La Lune</button>
+ <p id="texteLune"></p>
+
+
+  <h4>LE SOLEIL</h4>
+  <button onclick="afficherSoleil()">Le Soleil</button>
+  <p id ="texteSoleil"></p>
+
+
+   <h5>MERCURE</h5>
+   <button onclick="afficherMercure()">Mercure</button>
+   <p id="texteMercure"></p>
+
+ 
+    <h6>VENUS</h6>
+    <button onclick="afficherVenus()">Vénus</button>
+    <p id="texteVenus"></p>
+
+
+     <h3>LA TERRE</h3>
+     <button onclick="afficherTerre()">La Terre</button>
+     <p id="texteTerre"></p>
+
+ 
+
+      <h6>MARS</h6> 
+      <button onclick="afficherMars()">Mars</button>
+      <p id="texteMars"></p>
+
+
+ <script>
+  function afficherLune() {
+   if (document.getElementById("texteLune").innerHTML == "") {
+       document.getElementById("texteLune").innerHTML =
+ 
+    "La Lune est le satellite naturel de la Terre. La Lune est l'unique satellite naturel permanent de la planète Terre. Il s'agit du cinquième plus grand satellite naturel du Système solaire, et du plus grand des satellites planétaires par rapport à la taille de la planète autour de laquelle il orbite. C'est le deuxième satellite le plus dense du Système solaire après Io, un satellite de Jupiter";
+
+     } else {
+      document.getElementById("texteLune").innerHTML = ""
+}
+}
+
+
+
+
+   function afficherSoleil() {
+    if (document.getElementById("texteSoleil").innerHTML == "") {
+        document.getElementById("texteSoleil").innerHTML =
+      "Le Soleil est l’étoile de type naine jaune du Système solaire, qui se situe dans le bras d'Orion, à environ 8 kpc (∼26 100 al) du centre galactique de la Voie lactée. Il orbite autour du centre galactique en une année galactique de 225 à 250 millions d'années. Autour de lui gravitent de nombreux objets, dont la Terre (à la vitesse de 30 km/s), sept autres planètes, au moins cinq planètes naines, de très nombreux astéroïdes et comètes (notamment dans la ceinture d'astéroïdes et la ceinture de Kuiper). Le Soleil représente à lui seul environ 99,854 % de la masse du système planétaire ainsi constitué, Jupiter représentant plus des deux tiers du reste.";
+
+     } else { 
+            document.getElementById("texteSoleil").innerHTML = ""
+}
+}
+
+
+
+       function afficherTerre() {
+        if (document.getElementById("texteTerre").innerHTML == "") {
+            document.getElementById("texteTerre").innerHTML =
+     "La Terre est la troisième planète par ordre d'éloignement au Soleil et la cinquième plus grande du Système solaire aussi bien par la masse que par le diamètre. Par ailleurs, elle est le seul objet céleste connu pour abriter la vie. Elle orbite autour du Soleil en 365,256 jours solaires — une année sidérale — et réalise une rotation sur elle-même relativement au Soleil en un jour sidéral (environ 23 h 56 min 4 s), soit un peu moins que son jour solaire de 24 heures du fait de ce déplacement autour du Soleil[a]. L'axe de rotation de la Terre possède une inclinaison d'environ 23°, ce qui cause l'apparition des saisons.";
+
+
+           } else {
+            document.getElementById("texteTerre").innerHTML = ""
+}
+}
+
+
+
+      function afficherMercure() {
+        if (document.getElementById("texteMercure").innerHTML == "") {
+            document.getElementById("texteMercure").innerHTML =
+          "Mercure est la planète la plus proche du Soleil et la moins massive du Système solaire[N 1]. Son éloignement du Soleil est compris entre 0,31 et 0,47 unité astronomique (soit 46 et 70 millions de kilomètres), ce qui correspond à une excentricité orbitale de 0,2 — plus de douze fois supérieure à celle de la Terre, et de loin la plus élevée pour une planète du Système solaire. Elle est visible à l'œil nu depuis la Terre avec une taille apparente de 4,5 à 13 secondes d'arc, et une magnitude apparente de 5,7 à −2,3 ; son observation est toutefois rendue difficile par son élongation toujours inférieure à 28,3° qui la noie le plus souvent dans l'éclat du soleil. En pratique, cette proximité avec le soleil implique qu'elle ne peut être vue que près de l'horizon occidental après le coucher du soleil ou près de l'horizon oriental avant le lever du soleil, en général au crépuscule. Mercure a la particularité d'être en résonance spin-orbite 3:2, sa période de révolution (~88 jours) valant exactement 1,5 fois sa période de rotation (~59 jours), et donc la moitié d'un jour solaire (~176 jours). Ainsi, relativement aux étoiles fixes, elle tourne sur son axe exactement trois fois toutes les deux révolutions autour du Soleil.";
+
+       } else {
+        document.getElementById("texteMercure").innerHTML = ""
+}
+}    
+ 
+
+
+      function afficherVenus() {
+        if(document.getElementById("texteVenus").innerHTML == "") {
+           document.getElementById("texteVenus").innerHTML =
+        "Vénus est la deuxième planète du Système solaire par ordre d'éloignement au Soleil, et la sixième plus grosse aussi bien par la masse que par le diamètre.Vénus orbite autour du Soleil tous les 224,7 jours terrestres. Avec une période de rotation de 243 jours terrestres, il lui faut plus de temps pour tourner autour de son axe que toute autre planète du Système solaire. Elle tourne sur elle-même dans le sens opposé à celui des autres planètes (rotation rétrograde) : le Soleil s'y lève à l'ouest et se couche à l'est. Vénus possède l'orbite la plus circulaire des planètes du Système solaire avec une excentricité orbitale presque nulle et, du fait de sa lente rotation, est quasiment sphérique (aplatissement considéré comme nul). Elle ne possède pas de satellite naturel.";
+
+
+ 
+         } else {
+            document.getElementById("texteVenus").innerHTML = ""
+}
+}    
+
+
+        function afficherMars() {      
+         if (document.getElementById("texteMars").innerHTML == "") {
+             document.getElementById("texteMars").innerHTML =
+          "Mars (prononcé en français : /maʁs/) est la quatrième planète du Système solaire par ordre croissant de la distance au Soleil et la deuxième par ordre croissant de la taille et de la masse. Son                 éloignement au Soleil est compris entre 1,381 et 1,666 au (206,6 à 249,2 millions de kilomètres), elle a une période orbitale de 669,58 jours martiens (686,71 jours ou 1,88 année terrestre).";
+
+
+          } else {
+             document.getElementById("texteMars").innerHTML = ""
+}
+}
+
+
+</script>
+</body>
+
+</html>
